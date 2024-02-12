@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>
+           Atividade 83
+        </title>
+    </head>
+<body>
+    <p>
+        Minha Família 
+        <h4 id="declarationOfArrays"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Eu sou
+        <h4 id="accessFirstElement"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Fernando é meu
+        <h4 id="accessSecondElement"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Flávia é minha
+        <h4 id="accessThirdElement"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Minha família tem 
+        <h4 id="displayLengthOfArray"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Vou  repetir
+        <h4 id="loopTheArray"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+       Depois nasceu meu irmão
+        <h4 id="addElementAtTheEndOfArray"> 
+        </h4>
+    </p>
+    <p>
+        Como ordenar os arrays com letras do alfabeto? 
+        <h4 id="displaySortedAlphabetsArray"> 
+        </h4>
+    </p>
+    <script>
+    var fruit=["Clara" , "Mãe" , "Pai"];
+    console.log(fruit);
+    document.getElementById("declarationOfArrays").innerHTML = fruit;
+
+    var elment = fruit [0]
+    console.log(elment);
+    document.getElementById("accessFirstElement").innerHTML = elment;
+
+    var Ielment = fruit [1]
+    console.log(Ielment);
+    document.getElementById("accessSecondElement").innerHTML = Ielment;
+
+    var IIelment = fruit [2]
+    console.log(IIelment);
+    document.getElementById("accessThirdElement").innerHTML = IIelment;
+
+    var lenght= fruit.length;
+    console.log(lenght);
+    document.getElementById("displayLengthOfArray").innerHTML = lenght;
+
+    var loop = "";
+    for(i=0; i<fruit.length; i++){
+        console.log(fruit[i]);
+        loop = loop+fruit[i]+ "<br>";
+   
+    }
+    document.getElementById("loopTheArray").innerHTML = loop;
+
+    fruit.push("André");
+    console.log(fruit);
+    document.getElementById("addElementAtTheEndOfArray").innerHTML = fruit;
+
+fruits.sort();
+console.log(fruit);
+document.getElementById("displaySortedAlphabetsArray").innerHTML = fruit;
+
+</script>
